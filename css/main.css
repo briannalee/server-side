@@ -1,0 +1,31 @@
+a {
+  color: #c6bbdb;
+  text-decoration: none;
+}
+
+
+#box1 {
+  position: absolute;
+  top: 75px;
+  left: 20px;
+  width: 325px;
+}
+
+#box2 {
+  position: absolute;
+  top: 75px;
+  left: 350px;
+}
+
+#box3 {
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  width: 325px;
+}
+
+#box4 {
+  position: absolute;
+  top: 400px;
+  left: 350px;
+}
