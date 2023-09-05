@@ -15,6 +15,6 @@ echo "<h1>$pageTitle</h1>";
 		<p><a href="./Week3-Example7.php">Conditionals and Operators</a></p>
 		<p><a href="./Week3-Example8.php">Form with GET</a></p>
 		<p><a href="./Week3-Example9.php">Form with POST</a></p>
-		<a href="../index.php"><p>RETURN HOME</p></a>
+		<a class="btn btn-primary" href="../index.php">Return Home</a>
 </div>
 <?php include '../footer.php'; ?>
