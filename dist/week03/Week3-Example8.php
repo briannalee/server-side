@@ -1,6 +1,6 @@
 <?php
 	include '../environment.php';
-	$pageTitle = 'Week 3 - Form Submission';
+	$pageTitle = 'Week 3 - Form Submission with GET';
 	include '../header.php';
 	echo "<h1>$pageTitle</h1>";
 	?>

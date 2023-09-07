@@ -16,4 +16,4 @@ error_reporting(E_ALL);
 
 <body class="">
 <div class="container-fluid">
-	<div class="row col-sm-12 text-center"><h1>Welcome to the CSCI 2442 homepage of <?php 	echo "$firstName $lastName" ?> </h1></div>
+	<div class="row col-sm-12 text-center"><h1>Welcome to the CSCI 2442 Website of <?php 	echo "$firstName $lastName" ?> </h1></div>

@@ -12,9 +12,19 @@ module.exports = {
     port: 8080,
     hot: true
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin({
+    template: 'src/resources/templates/web.mustache',
+    inject: 'body',
+  })],
   module: {
     rules: [
+      {
+        test: /\.html$/,
+        loader: 'mustache-loader'
+        // loader: 'mustache-loader?minify'
+        // loader: 'mustache-loader?{ minify: { removeComments: false } }'
+        // loader: 'mustache-loader?noShortcut'
+    },
       {
         test: /\.(scss)$/,
         use: [
@@ -38,6 +48,16 @@ module.exports = {
             loader: 'sass-loader'
           }
         ]
+      },
+      {
+        test: /web\.mustache$/,
+        loader: 'mustache-loader',
+        options: {
+            tiny: true,
+            render: {
+                title: 'hello world',
+              },
+          },
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

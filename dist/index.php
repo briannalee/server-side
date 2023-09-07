@@ -18,7 +18,7 @@
 
 	<div class="row">
 		<div class="col-sm-6">
-			<h2>Inclass Files</h2>
+			<h3>Inclass Files</h3>
 			<ul>
 				<li><a href="./week02/">Week 02</a></li>
 				<li><a href="./week03/">Week 03</a></li>
@@ -38,7 +38,7 @@
 			</ul>
 		</div>
 		<div class="col-sm-6">
-			<h2>Homework Files</h2>
+			<h3>Homework Files</h3>
 			<ul>
 				<li><a href="./handout1/">Handout 1</a></li>
 				<li><a href="./handout2/">Handout 2</a></li>
