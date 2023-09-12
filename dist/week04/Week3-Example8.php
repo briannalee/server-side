@@ -1,8 +1,7 @@
 <?php
 	include '../environment.php';
-	$pageTitle = 'Week 3 - Form Submission with GET';
+	$pageTitle = 'Week 4 - Form Submission with GET';
 	include '../header.php';
-	
 	?>
 	<form method="get" action="Week3-Example8Response.php">
 		<p>First Name: <input class="box1" type="text" name="firstName"></p>

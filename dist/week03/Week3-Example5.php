@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Week 3 - Associative Arrays';
 	include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 		
 		// METHOD 1 TO DEFINE ASSOCIATIVE ARRAYS
 		$ages = array("Peter" => 35, "Ben" => 37, "Joe" => 43, "John" => 27, "Paul" => 22);
@@ -38,4 +38,3 @@
 		echo "<p>The index associated with California is $result1</p><hr>";
 
 		include("../footer.php");
-	?>

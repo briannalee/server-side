@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Week 3 - Displaying Server Variables with var_dump';
 	include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 	echo "<hr/>";
 
 	$firstName = "Brianna";
@@ -50,4 +50,3 @@
 	echo "<p>The var_dump for new value is:</p>";
 	echo "<p>" . var_dump($value1) . "</p>";
 	echo "<hr />";
-?>

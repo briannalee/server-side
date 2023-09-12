@@ -1,0 +1,56 @@
+<?php
+include '../environment.php';
+$pageTitle = 'Week 4 - Form Submission with POST';
+include '../header.php';
+?>
+<div class="row">
+	<form action="Week4-Example1Response.php" method="post">
+		<fieldset>
+			<legend>Enter your information in the form below:</legend>
+			<div class="form-group">
+				<label>Name:</label>
+				<input type="text" class="form-control" name="name" size="20" maxlength="40" required>
+			</div>
+			<div class="form-group">
+				<label>Email Address:</label>
+				<input type="email" class="form-control" name="email" size="40" maxlength="60" required>
+			</div>
+			<div class="form-group">
+				<label>Gender:</label>
+
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gender" id="M" value="M">
+					<label class="form-check-label" for="M">
+						Male
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="radio" name="gender" id="F" value="F" checked>
+					<label class="form-check-label" for="F">
+						Female
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label>Age:</label>
+				<select name="age">
+					<option value="0-29">Under 30</option>
+					<option value="30-60">Between 30 and 60</option>
+					<option value="60+">Over 60</option>
+				</select>
+
+			</div>
+			<div class="form-group">
+				<label>Comments:</label>
+				<textarea name="comments" rows="3" cols="40"></textarea>
+
+
+			</div>
+		</fieldset>
+
+		<input type="submit" name="submit" class="btn btn-primary" value="Submit My Information">
+
+	</form>
+</div>
+
+<?php include '../footer.php'; ?>

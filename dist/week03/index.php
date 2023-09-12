@@ -2,7 +2,6 @@
 include '../environment.php';
 $pageTitle = 'Homepage for Week 3';
 include '../header.php';
-echo "<h1 class='text-center'>$pageTitle</h1>";
 ?>
 <div id="row">
 		<h2>Week 3 Examples</h2>

@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Form Submission with POST';
 	include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 	?>
 	<form method="post" action="Week3-Example9Response.php">
 		<p>First Name: <input class="form-control" type="text" name="firstName"></p>

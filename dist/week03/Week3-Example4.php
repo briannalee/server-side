@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Week 3 - Indexed Arrays - Part 2';
 	include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 		
 	$baseballTeams = array("Twins", "Red Sox", "Yankees", "Brewers", "Cubs", "Mets", "Dodgers", "Cardinals", "Astros", "Giants");
 	$baseballLength = count($baseballTeams);
@@ -44,4 +44,3 @@
 	echo "</p><hr />";
 
 	include("../footer.php");
-	?>

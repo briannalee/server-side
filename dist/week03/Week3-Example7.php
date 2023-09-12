@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Week 3 - Conditional and Operators';
 	include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 		
 		$age1 = 25;
 		$age2 = 30;
@@ -66,5 +66,4 @@
 		}
 
 				
-		include("../footer.php"); 
-		?>
+		include("../footer.php");

@@ -1,14 +1,13 @@
 <?php
 	include '../environment.php';
-	$pageTitle = 'Week 3 - Response to POST form';
+	$pageTitle = 'Week 4 - Response to GET Form';
 	include '../header.php';
-	
 
-	$firstName = $_POST['firstName'];
-	$lastName = $_POST['lastName'];
-	$city = $_POST['firstName'];
-	$state = $_POST['state'];
-	$zipCode = $_POST['zipCode'];
+	$firstName = $_GET['firstName'];
+	$lastName = $_GET['lastName'];
+	$city = $_GET['firstName'];
+	$state = $_GET['state'];
+	$zipCode = $_GET['zipCode'];
 
 	echo "<p>First Name: $firstName</p>";
 	echo "<p>Last Name: $lastName</p>";

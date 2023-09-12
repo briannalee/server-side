@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Week 3 - Response to GET Form';
 	include '../header.php';
-	echo "<h1 class='text-center'>$pageTitle</h1>";
+
 
 	$firstName = $_GET['firstName'];
 	$lastName = $_GET['lastName'];
@@ -17,5 +17,3 @@
 	echo "<p>Zip Code: $zipCode</p>";
 
 	include("../footer.php");
-	?>
-

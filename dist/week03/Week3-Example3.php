@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Week 3 - Indexed Arrays - Part 1';
 	include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 
 	$baseballTeams = array("Twins", "Red Sox", "Yankees", "Brewers", "Cubs", "Mets");
 	echo "<p>The total number of teams in the baseball array is " . count($baseballTeams) . "</p>";
@@ -29,5 +29,4 @@
 	print_r($footballTeams); 
 	echo "</p><hr />";
 
-	include("../footer.php");			
-?>
+	include("../footer.php");

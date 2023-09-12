@@ -2,7 +2,7 @@
 	include '../environment.php';
   $pageTitle = 'Week02 - Example 5';
   include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 
   echo '<p>Displaying Server Variables - SUPERGLOBALS</p>';
   
@@ -19,6 +19,4 @@
   echo "<p>The serer is running $serverInfo</p>";
   
   echo "<p> A complete reference can be found at <a href='https://www.w3schools.com/php/php_superglobals.asp'>W3Schools</a></p>";
-  include '../footer.php'; 
-  ?>
-  
+  include '../footer.php';

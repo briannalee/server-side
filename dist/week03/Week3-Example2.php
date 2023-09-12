@@ -2,7 +2,7 @@
 	include '../environment.php';
 	$pageTitle = 'Week 3 - Displaying Constants';
 	include '../header.php';
-	echo "<h1>$pageTitle</h1>";
+	
 
 	// When third value is true, constant allows lowercase
 	define('USERNAME1', 'briannaRagsdale');
@@ -35,4 +35,3 @@
 	echo "<p>The value of isFriday is " . isFriday;
 	
 	include("../footer.php");
-?>

@@ -1,29 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Under Construction</title>
-</head>
-<style>
-	body {			background-color: 	#565264;
-					color: 				whitesmoke; }
-	li, a {			color:				#BFACC8; }
-	#box1 {			position:			absolute;
-					top:				75px;
-					left:				20px; 
-					width:				325px; }				
-</style>
+<?php
+include '../environment.php';
+$pageTitle = 'Homepage for Week 4';
+include '../header.php';
+?>
 <body>
-	<?php
-		// XAMPP SETUP for YOURNAME
-		$firstname = "Brianna";
-		$lastname = "Ragsdale";
-		echo "<h1>Files for $firstname $lastname </h1>";
-	?>
-	<div id="box1">
-		<h2>Under Construction</h1>
-		<h2>Check Back Soon</h1>
+	<h1>Week 4 - Forms and Numbers</h1>
+	<div id="row">
+		<h2>Examples</h2>
+		<p><a href="./Week3-Example8.php">Week 3 Review</a></p>
+		<p><a href="./Week4-Example1.php">Form with POST</a></p>
+		<p><a href="./Week4-Example2.php">Form with CSS Changes</a></p>
+		<p><a href="./Week4-Example3.php">Form with HIDDEN input</a></p>
+		<p><a href="./Week4-Example4.php">Form with File Uploads</a></p>
+		<p><a href="./Week4-Example5.php">Number Example 1</a></p>
+		<p><a href="./Week4-Example6.php">Number Example 2</a></p>
 		<a href="../index.php"><p>RETURN HOME</p></a>
 	</div>
 	
-</body>
-</html>
+<?php include '../footer.php'; ?>
