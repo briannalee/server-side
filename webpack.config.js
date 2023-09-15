@@ -1,30 +1,18 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const path = require('path');
 
 module.exports = {
-  entry: './src/js/main.js',
+  entry: './src/js/main.ts',
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'www/dist'),
+    clean: true,
   },
-  devServer: {
-    static: path.resolve(__dirname, 'dist'),
-    port: 8080,
-    hot: true
-  },
-  plugins: [new HtmlWebpackPlugin({
-    template: 'src/resources/templates/web.mustache',
-    inject: 'body',
-  })],
+  plugins: [
+    new FaviconsWebpackPlugin('./src/assets/favicon/android-chrome-512x512.png'),
+  ],
   module: {
     rules: [
-      {
-        test: /\.html$/,
-        loader: 'mustache-loader'
-        // loader: 'mustache-loader?minify'
-        // loader: 'mustache-loader?{ minify: { removeComments: false } }'
-        // loader: 'mustache-loader?noShortcut'
-    },
       {
         test: /\.(scss)$/,
         use: [
@@ -50,6 +38,11 @@ module.exports = {
         ]
       },
       {
+        test: /\.(ts|tsx)$/i,
+        loader: "ts-loader",
+        exclude: ["/node_modules/"],
+      },
+      {
         test: /web\.mustache$/,
         loader: 'mustache-loader',
         options: {
@@ -60,12 +53,15 @@ module.exports = {
           },
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-        use: [
-          { loader: 'file-loader' }
-        ]
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource',  //<-- Assets module - asset/resource
+        generator: {
+          filename: 'assets/[name][ext]'
+        }
       }
     ]
-  }
+  },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
 }
