@@ -13,19 +13,19 @@
         $baseName = $image['name'];
         $file = getcwd() . '/content/handout2/resources/' . $i . $baseName;
 
+        // Get image type, and check against supported types
+        $type = exif_imagetype($image['tmp_name']);
+        $error = !in_array($type, $allowedTypes);
+
+        // Image is not a type we can deal with, error out
+        if ($error) {
+          echo "<div class='bg-danger h4'> Please upload supported filetype (PNG, JPEG, GIF)</div>";
+          return;
+        }
+
         // Copy image file to local resources directory
         @copy($image['tmp_name'], $file);
         $localPath = '/content/handout2/resources/' . $i . $baseName;
-
-        // Get image type, and check against supported types
-        $type = exif_imagetype($file);
-        $error = !in_array($type, $allowedTypes);
-
-        // Image is not a type we can deal with, error out and exit script
-        if ($error) {
-          echo "Please upload supported filetype (PNG, JPEG, GIF)";
-          exit();
-        }
 
         // init $image variable
         $image;
@@ -39,7 +39,7 @@
           $image = imagecreatefrompng($file);
         }
 
-        $imgResized = imagescale($image, 400, 300);
+        $imgResized = imagescale($image, 800, 600);
 
         // Output resized image
         imagejpeg($imgResized, $file);
