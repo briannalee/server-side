@@ -1,8 +1,10 @@
 // Import custom CSS
-import '../scss/styles.scss'
+import '../scss/styles.scss';
 
 // Import all of Bootstrap's JS
-import 'bootstrap'
+import 'bootstrap';
+
+import 'fontawesome';
 
 import '../assets/images/headshot.jpeg'
 
