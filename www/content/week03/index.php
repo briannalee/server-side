@@ -1,12 +1,13 @@
 <div id="row">
-		<p><a href="./router.php?page=Week3-Example1">Server Variables</a></p>
-		<p><a href="./Week3-Example2.php">Constants</a></p>
-		<p><a href="./Week3-Example3.php">Indexed Arrays - Part 1</a></p>
-		<p><a href="./Week3-Example4.php">Indexed Arrays - Part 2</a></p>
-		<p><a href="./Week3-Example5.php">Associative Arrays</a></p>
-		<p><a href="./Week3-Example6.php">Single and Double Quotes</a></p>
-		<p><a href="./Week3-Example7.php">Conditionals and Operators</a></p>
-		<p><a href="./Week3-Example8.php">Form with GET</a></p>
-		<p><a href="./Week3-Example9.php">Form with POST</a></p>
-		<a class="btn btn-primary" href="../index.php">Return Home</a>
+	<div class="col-md-4 list-group">
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example1">Server Variables</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example2">Constants</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example3">Indexed Arrays - Part 1</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example4">Indexed Arrays - Part 2</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example5">Associative Arrays</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example6">Single and Double Quotes</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example7">Conditionals and Operators</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example8">Form with GET</a>
+		<a class="list-group-item list-group-item-action" href="/weeks/week03/example9">Form with POST</a>
+	</div>
 </div>

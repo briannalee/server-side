@@ -2,7 +2,7 @@
 // Init Smarty, set website variables, globals, etc
 include 'init.php';
 
-// 
+// Assign index smarty variables
 $smarty->assign('pageHeader', $smarty->getTemplateVars('firstName') . "'s Server Side Pages");
 $smarty->assign('pageContent', 'content/' . basename(__FILE__));
 $smarty->assign('pageSidebar', 'content/sidebar.php');
