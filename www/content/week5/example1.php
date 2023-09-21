@@ -1,9 +1,6 @@
 
-<?php 
-	// Fixed include errors because I don't like having them in my project...
-	include("/Applications/www/server-side/www/content/week05/header2.php"); 
-?>
-	
+	<?php include("/Applications/www/server-side/www/content/week5/header2.php"); ?>
+	<!-- MAIN FOES HERE -->
 	<div id="mainBox">
 		<h1>Using include and require functions in PHP</h1>
 		<h2>Week 5 Example 1</h2>

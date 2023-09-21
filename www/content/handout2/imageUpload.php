@@ -1,6 +1,6 @@
 <div class="row">
 
-  <form action="/weeks/handout2/imageCustomize" method="post" enctype="multipart/form-data" class="form-inline">
+  <form action="/handout/2/imageCustomize" method="post" enctype="multipart/form-data" class="form-inline">
     <legend>Please customize images:</legend>
     <div class="row mb-4">
       <?php

@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^([^/]+)/([^/]+)/?$ /router.php?handout=$1&page=$2 [L,QSA]
+RewriteRule ^([^/]+)/?$ /router.php?handout=$1 [L,QSA]

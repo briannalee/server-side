@@ -1,6 +1,6 @@
 <div class="row">
 	<div  class="col-md-2">
-		<a href="/weeks/week05/example5a">
+		<a href="/weeks/5/example5a">
 			<i class="fa fa-arrow-left" style='font-size:24px'></i>
 		</a>
 	</div>
@@ -15,7 +15,7 @@
 	</div>
 	
 	<div class="col-md-2">
-		<a href="/weeks/week05/example5c">
+		<a href="/weeks/5/example5c">
 			<i class="fa fa-arrow-right" style='font-size:24px'></i>
 		</a>
 	</div>

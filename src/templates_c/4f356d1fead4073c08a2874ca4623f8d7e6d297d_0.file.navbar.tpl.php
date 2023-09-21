@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.3.2, created on 2023-09-15 09:15:24
+/* Smarty version 4.3.2, created on 2023-09-21 19:58:35
   from '/Applications/www/server-side/src/templates/partials/navbar.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.3.2',
-  'unifunc' => 'content_6504048c650e38_31969261',
+  'unifunc' => 'content_650c844bc4d766_95317620',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4f356d1fead4073c08a2874ca4623f8d7e6d297d' => 
     array (
       0 => '/Applications/www/server-side/src/templates/partials/navbar.tpl',
-      1 => 1694762120,
+      1 => 1695319114,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6504048c650e38_31969261 (Smarty_Internal_Template $_smarty_tpl) {
+function content_650c844bc4d766_95317620 (Smarty_Internal_Template $_smarty_tpl) {
 ?><nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><?php echo $_smarty_tpl->tpl_vars['websiteName']->value;?>
@@ -45,8 +45,8 @@ $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable(null, $_smarty_tpl->isRenderin
 if ($_smarty_tpl->tpl_vars['i']->total > 0) {
 for ($_smarty_tpl->tpl_vars['i']->value = 2, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++) {
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration === 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration === $_smarty_tpl->tpl_vars['i']->total;?>
-            <?php $_smarty_tpl->_assignInScope('weekNumber', sprintf("%02d",$_smarty_tpl->tpl_vars['i']->value));?>
-            <li><a class="dropdown-item" href="/weeks/week<?php echo $_smarty_tpl->tpl_vars['weekNumber']->value;?>
+            <?php $_smarty_tpl->_assignInScope('weekNumber', $_smarty_tpl->tpl_vars['i']->value);?>
+            <li><a class="dropdown-item" href="/weeks/<?php echo $_smarty_tpl->tpl_vars['weekNumber']->value;?>
 ">Week <?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 </a></li>
           <?php }
@@ -65,7 +65,7 @@ $_smarty_tpl->tpl_vars['i'] = new Smarty_Variable(null, $_smarty_tpl->isRenderin
 if ($_smarty_tpl->tpl_vars['i']->total > 0) {
 for ($_smarty_tpl->tpl_vars['i']->value = 1, $_smarty_tpl->tpl_vars['i']->iteration = 1;$_smarty_tpl->tpl_vars['i']->iteration <= $_smarty_tpl->tpl_vars['i']->total;$_smarty_tpl->tpl_vars['i']->value += $_smarty_tpl->tpl_vars['i']->step, $_smarty_tpl->tpl_vars['i']->iteration++) {
 $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration === 1;$_smarty_tpl->tpl_vars['i']->last = $_smarty_tpl->tpl_vars['i']->iteration === $_smarty_tpl->tpl_vars['i']->total;?>
-            <li><a class="dropdown-item" href="/weeks/handout<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+            <li><a class="dropdown-item" href="/handout/<?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 ">Handout <?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 </a></li>
           <?php }

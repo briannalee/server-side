@@ -1,5 +1,5 @@
 
-	<?php include("/Applications/www/server-side/www/content/week05/header2.php"); ?>
+	<?php require("/Applications/www/server-side/www/content/week5/header2.php"); ?>
 	<!-- MAIN FOES HERE -->
 	<div id="mainBox">
 		<h1>Using include and require functions in PHP</h1>

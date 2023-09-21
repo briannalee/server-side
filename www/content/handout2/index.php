@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="container m-auto col-sm-6">
-		<form action="/weeks/handout2/imageUpload" method="post" enctype="multipart/form-data">
+		<form action="/handout/2/imageUpload" method="post" enctype="multipart/form-data">
 			<fieldset>
 				<legend>Please upload three (3) images:</legend>
 				<div class="mb-3">

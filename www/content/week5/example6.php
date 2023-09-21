@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 <div class="row">
 	<div class="container m-auto col-md-12">
-		<form action="/weeks/week05/example6" method="post">
+		<form action="/weeks/5/example6" method="post">
 			<fieldset>
 				<legend>Enter your information in the form below:</legend>
 				<div class="mb-3 row">

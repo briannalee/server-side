@@ -1,7 +1,7 @@
 
 <div class="row">
     <div class="container m-auto col-sm-6">
-        <form action="/weeks/week04/Example4Response" method="post" enctype="multipart/form-data">
+        <form action="/weeks/4/Example4Response" method="post" enctype="multipart/form-data">
             <fieldset>
                 <legend>Enter your information in the form below:</legend>
                 <div class="mb-3">

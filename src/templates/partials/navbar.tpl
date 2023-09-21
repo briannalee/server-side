@@ -17,8 +17,8 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarHomeworkDropdown">
           {for $i=2 to 16}
-            {assign var="weekNumber" value=$i|string_format:"%02d"}
-            <li><a class="dropdown-item" href="/weeks/week{$weekNumber}">Week {$i}</a></li>
+            {assign var="weekNumber" value=$i}
+            <li><a class="dropdown-item" href="/weeks/{$weekNumber}">Week {$i}</a></li>
           {/for}
           </ul>
         </li>
@@ -29,7 +29,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarWeeksDropdown">
           {for $i=1 to 6}
-            <li><a class="dropdown-item" href="/weeks/handout{$i}">Handout {$i}</a></li>
+            <li><a class="dropdown-item" href="/handout/{$i}">Handout {$i}</a></li>
           {/for}
           </ul>
         </li>

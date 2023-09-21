@@ -1,4 +1,4 @@
-	<form method="get" action="/weeks/week03/Example8Response">
+	<form method="get" action="/weeks/3/Example8Response">
 		<p>First Name: <input class="box1" type="text" name="firstName"></p>
 		<p>Last Name:  <input class="box1" type="text" name="lastName"></p>
 		<p>City:       <input class="box1" type="text" name="city"></p>

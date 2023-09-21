@@ -1,6 +1,6 @@
 
 <div class="row">
-	<form action="/weeks/week04/Example1Response" method="post">
+	<form action="/weeks/4/Example1Response" method="post">
 		<fieldset>
 			<legend>Enter your information in the form below:</legend>
 			<div class="form-group">
