@@ -23,19 +23,28 @@
 	}
 
   // My method for lazy people
-  function returnLargestNum() {
-    $numArgs = func_num_args();
-    $largest = 0;
-    echo "<p>Numbers: ";
-    for ($i=0; $i < $numArgs; $i++) {
-      $num = func_get_arg($i);
-      echo "$num ";
-      if ($num > $largest) {
-        $largest = $num;
+  function returnLargestNum(...$numbers) {
+		$numNumbers = count($numbers);
+
+		// Sanity check
+		if ($numNumbers <= 0) {
+			echo "<p>Invalid Input</p>";
+			return;
+		}
+		echo "<p>Numbers: ";
+    
+		$largest = 0;
+		$count = 1;
+    foreach ($numbers as $n) {
+      if ($n > $largest) {
+        $largest = $n;
       }
+			echo "$n ";
+			if ($count < $numNumbers) echo ", ";
+			$count++;
     }
 
-    echo "<p>Largest number is: $largest</p>";
+    return $largest;
   }
 
 	?>
@@ -49,7 +58,7 @@
 	echo "<hr />";
 	echo "<p>The largest value from the third set of numbers is " . returnLargest(3,19,34,70) . "</p>";
 	echo "<hr />";
-	returnLargestNum(5,100,4,80,10,30,50,30,34,64);
+	echo "<p>The largest value from the unlimited set of numbers is: " . returnLargestNum(5,100,4,80,10,30,50,30,34,64);
 	echo "<hr />";
 
 ?>
