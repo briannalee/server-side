@@ -39,7 +39,7 @@
       if ($n > $largest) {
         $largest = $n;
       }
-			echo "$n ";
+			echo "$n";
 			if ($count < $numNumbers) echo ", ";
 			$count++;
     }

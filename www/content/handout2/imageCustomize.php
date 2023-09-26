@@ -10,12 +10,10 @@
 
     echo "<div class='col-md-4'>
           <figure class='figure'>
-          <img src='/content/handout2/resources/" . $imageName . "' class='figure-img img-fluid rounded' alt='customized image'>
-          <figcaption class='figure-caption bg-dark-subtle h6 text-center' style='color:" . $captionColor . ";'>$imageCaption</figcaption>
+          <img src='/content/handout2/resources/$imageName' class='figure-img img-fluid rounded' alt='customized image'>
+          <figcaption class='figure-caption bg-dark-subtle h6 text-center' style='color:$captionColor'>$imageCaption</figcaption>
           </figure>
         </div>";
   }
-
-
   ?>
 </div>
