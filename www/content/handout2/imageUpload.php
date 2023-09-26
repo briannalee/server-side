@@ -4,6 +4,15 @@
     <legend>Please customize images:</legend>
     <div class="row mb-4">
       <?php
+
+      // Empty resources folder before copying files
+      $files = glob(getcwd() . '/content/handout2/resources/*');
+      foreach($files as $file){
+        if(is_file($file)) {
+          unlink($file); // Delete file
+        }
+      }
+
       // Set allowed types of images, 1 - GIF, 2 - JPEG, 3 - PNG
       $allowedTypes = [1, 2, 3];
 
@@ -28,7 +37,7 @@
         $fileName = $fileSeed . image_type_to_extension($imageType);
         $file = getcwd() . '/content/handout2/resources/' . $fileName;
         @copy($image['tmp_name'], $file);
-        
+
         // Create php image from file
         switch ($imageType) {
           case 1:
