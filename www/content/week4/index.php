@@ -1,6 +1,5 @@
 <div id="row">
 	<div class="col-sm-4">
-		<h2>Examples</h2>
 		<div class="list-group">
 			<a class="list-group-item list-group-item-action" href="/weeks/4/example1">Form with POST</a>
 			<a class="list-group-item list-group-item-action" href="/weeks/4/example2">Form with CSS Changes</a>

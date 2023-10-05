@@ -3,7 +3,8 @@
   <p>Copyright <i class="fa fa-copyright" class="h6"></i>&nbsp;{$smarty.now|date_format:'%Y'}
   </div>
 </footer>
-<script type="text/javascript" src="/dist/bundle.js"></script>
 </body>
+
+<script type="text/javascript" src="/dist/bundle.js"></script>
 
 </html>

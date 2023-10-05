@@ -8,6 +8,8 @@ import 'fontawesome';
 
 import '../assets/images/headshot.jpeg'
 
+import { toggleElement } from './toggle';
+
 var element = document.getElementById('back-link');
 
 // Provide a standard href to facilitate standard browser features such as 
@@ -25,3 +27,5 @@ element!.onclick = function() {
   history.back();
   return false;
 }
+toggleElement('read');
+

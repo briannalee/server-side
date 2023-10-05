@@ -15,9 +15,11 @@ if (isset($_GET['handout'])) {
 }
 
 $pageID = isset($_GET['page']) ? $_GET['page'] : 'index';
+$formattedWeekID = ucfirst(preg_replace('/(\d+)/', ' ${1}', $weekID));
+$formattedPageID = $pageID == 'index' ? "Examples" : ucfirst(preg_replace('/(\d+)/', ' ${1}',$pageID));
 
-$smarty->assign('pageHeader', ucfirst($weekID));
-$smarty->assign('pageSubheader', $pageID);
+$smarty->assign('pageHeader', $formattedWeekID);
+$smarty->assign('pageSubheader', $formattedPageID);
 
 $path = 'content/' . $weekID . '/' . $pageID . '.php';
 // Generate content based on the page identifier

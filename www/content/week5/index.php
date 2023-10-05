@@ -1,6 +1,5 @@
 <div id="row">
 	<div class="col-sm-12 col-md-6">
-		<h2>Examples</h2>
 		<div class="list-group">
 			<a class="list-group-item list-group-item-action" href="/weeks/5/example1">Using Include - Normal</a>
 			<a class="list-group-item list-group-item-action" href="/weeks/5/example2">Using Include - With Typos</a>
