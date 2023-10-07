@@ -14,9 +14,25 @@ if (isset($_GET['handout'])) {
   $weekID = 'handout' . $_GET['handout'];
 }
 
+// Get pageID (if set), otherwise set to index
 $pageID = isset($_GET['page']) ? $_GET['page'] : 'index';
+
+// Format weekID and pageID for user display
 $formattedWeekID = ucfirst(preg_replace('/(\d+)/', ' ${1}', $weekID));
-$formattedPageID = $pageID == 'index' ? "Examples" : ucfirst(preg_replace('/(\d+)/', ' ${1}',$pageID));
+
+// If supplied subheader use that, otherwise use automated subheader
+if (isset($_GET['subheader'])) {
+  $formattedPageID = $_GET['subheader'];
+}else{
+  // Subheader for Labs
+  $formattedPageID = str_contains($weekID,'week') && $pageID == 'index' ? "Examples" : ucfirst(preg_replace('/(\d+)/', ' ${1}',$pageID));
+  // Subheader for Handouts
+  $formattedPageID = str_contains($weekID,'handout') && $pageID == 'index' ? "Homework" : ucfirst(preg_replace('/(\d+)/', ' ${1}',$pageID));
+}
+
+
+
+$formattedPageID = isset($_GET['subheader']) ?  : $formattedPageID;
 
 $smarty->assign('pageHeader', $formattedWeekID);
 $smarty->assign('pageSubheader', $formattedPageID);

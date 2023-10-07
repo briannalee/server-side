@@ -1,6 +1,6 @@
 </div>
 </div>
-<a class="btn btn-primary my-4" id="back-link">Go Back</a>
+<a class="btn btn-danger mt-5 mb-1" id="back-link">Go Back</a>
 </div>
 
 {include file="partials/footer.tpl"}

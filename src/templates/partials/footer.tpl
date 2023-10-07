@@ -6,5 +6,4 @@
 </body>
 
 <script type="text/javascript" src="/dist/bundle.js"></script>
-
 </html>

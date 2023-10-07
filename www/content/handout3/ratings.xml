@@ -1,2 +1,24 @@
-<?xml version="1.0"?>
-<ratings><service>5</service><cuisine>5</cuisine><price>5</price><comments>Great Service</comments><service>2</service><cuisine>4</cuisine><price>4</price><comments>Food was good but service was slow</comments><service>1</service><cuisine>1</cuisine><price>1</price><comments>Horrible experience</comments></ratings>
+<?xml version="1.0" encoding="UTF-8"?>
+<ratings>
+ <review>
+  <date>1696543200</date>
+  <service>5</service>
+  <cuisine>5</cuisine>
+  <price>5</price>
+  <comments>Great Service</comments>
+ </review>
+ <review>
+  <date>1696197600</date>
+  <service>2</service>
+  <cuisine>4</cuisine>
+  <price>4</price>
+  <comments>Food was good but service was slow</comments>
+ </review>
+ <review>
+  <date>1696284000</date>
+  <service>1</service>
+  <cuisine>1</cuisine>
+  <price>1</price>
+  <comments>Horrible experience</comments>
+ </review>
+</ratings>
