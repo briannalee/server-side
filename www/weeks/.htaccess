@@ -1,3 +1,4 @@
 RewriteEngine on
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/?$ /router.php?week=$1&page=$2&subheader=$3 [L,QSA]
 RewriteRule ^([^/]+)/([^/]+)/?$ /router.php?week=$1&page=$2 [L,QSA]
 RewriteRule ^([^/]+)/?$ /router.php?week=$1 [L,QSA]

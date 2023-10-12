@@ -6,8 +6,13 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'www/dist'),
-    clean: true,
+    clean: true,    
+    libraryTarget: 'var',
+    library: 'EntryPoint',
+    umdNamedDefine: true,
+    libraryExport: 'default'
   },
+  
   plugins: [
     new FaviconsWebpackPlugin('./src/assets/favicon/android-chrome-512x512.png'),
   ],
@@ -36,6 +41,13 @@ module.exports = {
             loader: 'sass-loader'
           }
         ]
+      },
+      {
+        test: require.resolve("jquery"),
+        loader: "expose-loader",
+        options: {
+          exposes: ["$", "jQuery"],
+        },
       },
       {
         test: /\.(ts|tsx)$/i,
