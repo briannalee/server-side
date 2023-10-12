@@ -1,20 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>MySQL Database Test 1</title>
-	<style>
-		body {	background-color: 	blue; 
-				color:  			white; }
-		hr {	background-color: 	white; 
-				height: 			5px; }
-	</style>
-</head>
-<body>
-<h1>MYSQL Database Test 1</h1>
-<hr/>
 <?php 
 
+	/*
+
+	I changed ID to auto increment in MySQL, hence skipping a few ID numbers ------------->
+
+	*/
 	define('DB_HOST', 'localhost');
 	define('DB_USER', 'root');
 	define('DB_PASS', '');
@@ -54,7 +44,3 @@
 	
 	mysqli_close($conn1);	
 	
-?>
-<hr/>
-</body>
-</html>
