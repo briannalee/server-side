@@ -6,7 +6,8 @@ import 'bootstrap';
 
 import 'fontawesome';
 
-import '../assets/images/headshot.jpeg'
+import '../assets/images/headshot.jpeg';
+import '../assets/images/restaurant.jpg';
 
 var element = document.getElementById('back-link');
 
@@ -21,7 +22,7 @@ element!.setAttribute('href', document.referrer);
 // page on the browser history, so that if the user clicks "back" again,
 // it'll actually return to this page. We need to perform a native back to
 // integrate properly into the browser's history behavior
-element!.onclick = function() {
+element!.onclick = function () {
   history.back();
   return false;
 }

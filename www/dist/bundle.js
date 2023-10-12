@@ -794,10 +794,9 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /*!************************!*\
   !*** ./src/js/main.ts ***!
   \************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+/***/ ((module, exports, __webpack_require__) => {
 
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\n// Import custom CSS\n__webpack_require__(/*! ../scss/styles.scss */ \"./src/scss/styles.scss\");\n// Import all of Bootstrap's JS\n__webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\");\n__webpack_require__(/*! fontawesome */ \"./node_modules/fontawesome/index.js\");\n__webpack_require__(/*! ../assets/images/headshot.jpeg */ \"./src/assets/images/headshot.jpeg\");\nvar element = document.getElementById('back-link');\n// Provide a standard href to facilitate standard browser features such as \n//  - Hover to see link\n//  - Right click and copy link\n//  - Right click and open in new tab\nelement.setAttribute('href', document.referrer);\n// We can't let the browser use the above href for navigation. If it does, \n// the browser will think that it is a regular link, and place the current \n// page on the browser history, so that if the user clicks \"back\" again,\n// it'll actually return to this page. We need to perform a native back to\n// integrate properly into the browser's history behavior\nelement.onclick = function () {\n    history.back();\n    return false;\n};\n\n\n//# sourceURL=webpack://EntryPoint/./src/js/main.ts?");
+eval("var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__, exports, __webpack_require__(/*! ../scss/styles.scss */ \"./src/scss/styles.scss\"), __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.esm.js\"), __webpack_require__(/*! fontawesome */ \"./node_modules/fontawesome/index.js\"), __webpack_require__(/*! ../assets/images/headshot.jpeg */ \"./src/assets/images/headshot.jpeg\"), __webpack_require__(/*! ../assets/images/restaurant.jpg */ \"./src/assets/images/restaurant.jpg\")], __WEBPACK_AMD_DEFINE_RESULT__ = (function (require, exports) {\n    \"use strict\";\n    Object.defineProperty(exports, \"__esModule\", ({ value: true }));\n    var element = document.getElementById('back-link');\n    // Provide a standard href to facilitate standard browser features such as \n    //  - Hover to see link\n    //  - Right click and copy link\n    //  - Right click and open in new tab\n    element.setAttribute('href', document.referrer);\n    // We can't let the browser use the above href for navigation. If it does, \n    // the browser will think that it is a regular link, and place the current \n    // page on the browser history, so that if the user clicks \"back\" again,\n    // it'll actually return to this page. We need to perform a native back to\n    // integrate properly into the browser's history behavior\n    element.onclick = function () {\n        history.back();\n        return false;\n    };\n}).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),\n\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));\n\n\n//# sourceURL=webpack://EntryPoint/./src/js/main.ts?");
 
 /***/ }),
 
@@ -1106,6 +1105,17 @@ eval("module.exports = __webpack_require__.p + \"1bac2991f3dbfa237aec.woff2\";\n
 
 "use strict";
 eval("module.exports = __webpack_require__.p + \"assets/headshot.jpeg\";\n\n//# sourceURL=webpack://EntryPoint/./src/assets/images/headshot.jpeg?");
+
+/***/ }),
+
+/***/ "./src/assets/images/restaurant.jpg":
+/*!******************************************!*\
+  !*** ./src/assets/images/restaurant.jpg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"assets/restaurant.jpg\";\n\n//# sourceURL=webpack://EntryPoint/./src/assets/images/restaurant.jpg?");
 
 /***/ })
 
