@@ -23,10 +23,10 @@ $_SESSION['editMode'] = false;
     <div class="collapse multi-collapse show" id="read">
       <div class="card card-body mb-3">
         <div class="row">
-          <div class="col-10">
+          <div class="col-md-9 col-sm-8">
             <h5>Read Reviews</h5>
           </div>
-          <div class="col-2">
+          <div class="col-md-3 col-sm-4">
             <a class="btn btn-danger w-100" role="button" onclick="changeToEditMode();">
               Manage
             </a>

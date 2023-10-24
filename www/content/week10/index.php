@@ -1,3 +1,3 @@
 
-<h2>Under Construction</h1>
-		<h2>Check Back Soon</h1>
+		<p><a href="/weeks/10/example1">MySQL Commands - Part 1</a></p>
+
