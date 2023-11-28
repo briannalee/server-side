@@ -1,0 +1,1 @@
+<img src='./dist/assets/headshot.jpeg' class='img-fluid' />
